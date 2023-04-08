@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/**　構造・整形 **/
+html {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 16px;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+
+    img {
+      opacity: 0.8;
+    }
+  }
+
+  &.underline {
+    text-decoration: underline;
+    color: #568fcc;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+*.fixed {
+  position: fixed;
+}
+
+.baseWhap {
+  width: 800px;
+  height: 450px;
+  background: #f0efe7;
+}
+
+.is-show {
+  display: block;
+}
+
+.is-hide {
+  display: none;
+}
